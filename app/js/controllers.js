@@ -1,0 +1,14 @@
+/**
+ * Created by thiagocidaleassumpcao on 22/12/14.
+ */
+var myappControllers = angular.module('myappControllers',[]);
+
+myappControllers.controller('RegisterCtrl',['$scope',function($scope) {
+
+
+}]);
+
+myappControllers.controller('HomeCtrl',['$scope',function($scope) {
+
+
+}]);
