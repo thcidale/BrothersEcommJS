@@ -3,16 +3,19 @@
  */
 var myappControllers = angular.module('myappControllers',[]);
 
-myappControllers.controller('RegisterCtrl',['$scope',function($scope) {
+myappControllers.controller('RegisterCtrl',['$scope','Countries',function($scope, Countries) {
+    $scope.hello = 'Hello World';
 
-
+    Countries.get(function(data){
+        $scope.countries = data.countries;
+    })
 }]);
 
 myappControllers.controller('HomeCtrl',['$scope',function($scope) {
 
 
 }]);
-myappControllers.controller('ProductCtrl',['$scope',function($scope) {
+myappControllers.controller('ProductsCtrl',['$scope',function($scope) {
 $scope.productrows =[];
     productrow = [];
     product={};

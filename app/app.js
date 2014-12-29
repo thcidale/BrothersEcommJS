@@ -1,17 +1,19 @@
 // Declare app level module which depends on views, and components
 myapp= angular.module('myApp', [
+  'ngResource',
   'ngRoute',
   'myApp.version',
-  'myappControllers'
+  'myappControllers',
+  'app.services'
 ]);
 myapp.config(['$routeProvider', function($routeProvider) {
   $routeProvider
       .when('/register', {
     templateUrl: 'partials/register.html',
     controller: 'RegisterCtrl'
-  }).when('/product', {
+  }).when('/products', {
         templateUrl: 'partials/products.html',
-        controller: 'ProductCtrl'
+        controller: 'ProductsCtrl'
       }).
       when('/home', {
         templateUrl: 'partials/home.html',
