@@ -1,16 +1,134 @@
 [
 {
   "id":"prod1",
- "title":"Pizza de Muzzarela",
-  "subtitle":"Molho de Tomate",
-  "price":"13.43",
+  "title":"Pizza de Muzzarela",
+  "subtitle":"8 pedaços",
+  "flavor":["muzzarela"],
+  "type":"single",
+  "size":"grande",
+  "massa":"normal",
+  "price":"43.43",
   "numberOfReviews":"23"
 },
   {
     "id":"prod2",
+    "title":"Pizza de Muzzarela",
+    "subtitle":"6 pedaços",
+    "flavor":["muzzarela"],
+    "type":"single",
+    "size":"pequena",
+    "massa":"normal",
+    "price":"13.43",
+    "numberOfReviews":"23"
+  },
+  {
+    "id":"prod3",
+    "title":"Pizza de Muzzarela",
+    "subtitle":"8 pedaços",
+    "flavor":["muzzarela"],
+    "type":"single",
+    "size":"grande",
+    "massa":"pan",
+    "price":"53.43",
+    "numberOfReviews":"23"
+  },
+  {
+    "id":"prod4",
+    "title":"Pizza de Muzzarela",
+    "subtitle":"6 pedaços",
+    "flavor":["muzzarela"],
+    "type":"single",
+    "size":"pequena",
+    "massa":"pan",
+    "price":"13.43",
+    "numberOfReviews":"23"
+  },
+  {
+    "id":"prod5",
     "title":"Pizza de Calabresa",
-    "subtitle":"Com azeitona",
-    "price":"33.43",
-    "numberOfReviews":"33"
+    "subtitle":"8 pedaços",
+    "flavor":["calabresa"],
+    "type":"single",
+    "size":"grande",
+    "massa":"normal",
+    "price":"43.43",
+    "numberOfReviews":"23"
+  },
+  {
+    "id":"prod6",
+    "title":"Pizza de Calabresa",
+    "subtitle":"6 pedaços",
+    "flavor":["calabresa"],
+    "type":"single",
+    "size":"pequena",
+    "massa":"normal",
+    "price":"13.43",
+    "numberOfReviews":"23"
+  },
+  {
+    "id":"prod7",
+    "title":"Pizza de Calabresa",
+    "subtitle":"8 pedaços",
+    "flavor":["calabresa"],
+    "type":"single",
+    "size":"grande",
+    "massa":"pan",
+    "price":"53.43",
+    "numberOfReviews":"23"
+  },
+  {
+    "id":"prod8",
+    "title":"Pizza de Calabresa",
+    "subtitle":"6 pedaços",
+    "flavor":["calabresa"],
+    "type":"single",
+    "size":"pequena",
+    "massa":"pan",
+    "price":"13.43",
+    "numberOfReviews":"23"
+  },
+  {
+    "id":"prod9",
+    "title":"Pizza de Aliche",
+    "subtitle":"8 pedaços",
+    "flavor":["aliche"],
+    "type":"single",
+    "size":"grande",
+    "massa":"normal",
+    "price":"43.43",
+    "numberOfReviews":"23"
+  },
+  {
+    "id":"prod10",
+    "title":"Pizza de Aliche",
+    "subtitle":"6 pedaços",
+    "flavor":["aliche"],
+    "type":"single",
+    "size":"pequena",
+    "massa":"normal",
+    "price":"13.43",
+    "numberOfReviews":"23"
+  },
+  {
+    "id":"prod11",
+    "title":"Pizza de Aliche",
+    "subtitle":"8 pedaços",
+    "flavor":["aliche"],
+    "type":"single",
+    "size":"grande",
+    "massa":"pan",
+    "price":"53.43",
+    "numberOfReviews":"23"
+  },
+  {
+    "id":"prod12",
+    "title":"Pizza de Aliche",
+    "subtitle":"6 pedaços",
+    "flavor":["aliche"],
+    "type":"single",
+    "size":"pequena",
+    "massa":"pan",
+    "price":"13.43",
+    "numberOfReviews":"23"
   }
 ]
