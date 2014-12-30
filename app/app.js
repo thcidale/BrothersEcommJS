@@ -2,15 +2,14 @@
 myapp= angular.module('myApp', [
   'ngRoute',
   'myApp.version',
-  'myappControllers',
-  'myappServices'
+  'myappControllers'
 ]);
 myapp.config(['$routeProvider', function($routeProvider) {
   $routeProvider
       .when('/register', {
     templateUrl: 'partials/register.html',
     controller: 'RegisterCtrl'
-  }).when('/products', {
+  }).when('/product', {
         templateUrl: 'partials/products.html',
         controller: 'ProductCtrl'
       }).
