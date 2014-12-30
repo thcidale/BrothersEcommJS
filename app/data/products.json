@@ -1,0 +1,16 @@
+[
+{
+  "id":"prod1",
+ "title":"Pizza de Muzzarela",
+  "subtitle":"Molho de Tomate",
+  "price":"13.43",
+  "numberOfReviews":"23"
+},
+  {
+    "id":"prod2",
+    "title":"Pizza de Calabresa",
+    "subtitle":"Com azeitona",
+    "price":"33.43",
+    "numberOfReviews":"33"
+  }
+]
