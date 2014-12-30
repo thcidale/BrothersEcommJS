@@ -129,15 +129,17 @@
                 </select> per page
             </div>
             <ul class="dc_pagination dc_paginationA dc_paginationA06">
-                <li><a href="#" class="previous">Pages</a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
+                <li><a href="#/products" class="previous" ng-click="prevPage()"><< Prev</a></li>
+                <li ng-repeat="n in range()" ng-class="{active: n == currentPage}" ng-click="setPage(n)">
+                    <a href="#/products">{{n+1}}</a>
+                </li>
+                <li><a href="#/products" class="previous" ng-click="nextPage()">Next >></a></li>
             </ul>
             <div class="clear"></div>
         </div>
         <div class="clear"></div>
     </div>
-    <div class="box1" ng-repeat="productrow in productrows">
+    <div class="box1" ng-repeat="productrow in productrows | pagination:currentPage*itemsPerPage | limitTo:itemsPerPage">
         <div class="col_1_of_single1 span_1_of_single1" ng-repeat="product in productrow">
             <div class="view1 view-fifth1">
                 <div class="top_box">

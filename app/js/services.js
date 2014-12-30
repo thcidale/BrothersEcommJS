@@ -34,5 +34,16 @@ appServices.factory('ProductFactory',['$resource',function($resource){
         });
     return rowOfProducts;
     };
+
+    service.getNumberOfProducts = function(productsInRows){
+        var count = 0;
+        productsInRows.forEach(function(row){
+            row.forEach(function(product){
+                count++;
+            })
+
+        })
+    return count;
+    }
     return service;
 }]);
