@@ -22,6 +22,18 @@ myappControllers.controller('HomeCtrl',['$scope',function($scope) {
 }]);
 
 
+myappControllers.controller('ProductsDetailsCtrl', ['$scope', 'Products','$routeParams', function($scope, Products, $routeParams){
+    Products.query(function(data){
+        $scope.products = data[$routeParams.productId];
+    });
+
+    $scope.pizzas = ['Select a Pizza', 'small', 'medium','large', 'Xlarge'];
+
+    $scope.buyPizza = function(){
+       // faz alguma coisa
+    }
+}]);
+
 myappControllers.controller('ProductsCtrl',['$scope','ProductFactory',function($scope,ProductFactory) {
     $scope.productrows =[];
 
@@ -64,3 +76,4 @@ myappControllers.controller('ProductsCtrl',['$scope','ProductFactory',function($
         }
     };
 }]);
+

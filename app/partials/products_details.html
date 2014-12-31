@@ -1,0 +1,30 @@
+<my-header></my-header>
+	<div class="center">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+			 <img ng-src="images/prod{{products.id}}.jpg">
+			</div>
+			<div class="col-md-8">
+				<h3>{{products.title}}</h3>
+				<p>{{products.price | currency}}</p>
+				<select>
+					<option ng-repeat="pizza in pizzas">{{pizza}}</option>
+				</select>
+				<button ng-click="buyPizza()"> Buy Now</button>
+			</div>
+		</div>	
+	</div>
+
+	<div class="container center-less">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="features">
+					<h3>Description</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos earum natus eveniet voluptatum, ut hic, praesentium dolore minima perferendis omnis sequi ad. Consequatur porro sint unde amet, veritatis numquam iure officia dolores deserunt eligendi non laborum nesciunt temporibus minus quasi ratione molestias eius quibusdam. Deleniti quae fugit, ea assumenda ut?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+<my-footer></my-footer>

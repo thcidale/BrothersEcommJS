@@ -8,13 +8,18 @@ myapp= angular.module('myApp', [
 myapp.config(['$routeProvider', function($routeProvider) {
   $routeProvider
       .when('/register', {
-    templateUrl: 'partials/register.html',
-    controller: 'RegisterCtrl'
-  }).when('/products', {
+        templateUrl: 'partials/register.html',
+        controller: 'RegisterCtrl'
+      })
+      .when('/products', {
         templateUrl: 'partials/products.html',
         controller: 'ProductsCtrl'
-      }).
-      when('/home', {
+      })
+      .when('/products/:productId', {
+        templateUrl: 'partials/products_details.html',
+        controller: 'ProductsDetailsCtrl'
+      })
+      .when('/home', {
         templateUrl: 'partials/home.html',
         controller: 'HomeCtrl'
       }).

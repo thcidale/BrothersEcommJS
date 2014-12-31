@@ -1,0 +1,11 @@
+.center {
+	padding: 50px;
+}
+
+.center-less {
+	padding: 20px;
+}
+
+.info > a {
+	text-decoration: none;
+}

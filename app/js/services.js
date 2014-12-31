@@ -3,6 +3,10 @@
  */
 var appServices = angular.module('myappServices',['ngResource']);
 
+appServices.factory('Products', ['$resource', function($resource){
+    return $resource('data/products.json');
+}]);
+
 appServices.factory('ProductFactory',['$resource',function($resource){
     var service = {};
 
