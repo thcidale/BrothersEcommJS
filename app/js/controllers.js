@@ -21,6 +21,26 @@ myappControllers.controller('HomeCtrl',['$scope',function($scope) {
 
 }]);
 
+myappControllers.controller('PaginationCtrl',['$scope',function($scope){
+
+    $scope.prevPage = function() {
+        if ($scope.currentPage > 0) {
+            $scope.currentPage--;
+        }
+    };
+    $scope.pageCount = function() {
+        return Math.ceil($scope.productrows.length/$scope.itemsPerPage)-1;
+    };
+    $scope.setPage = function(n) {
+        $scope.currentPage = n;
+    };
+    $scope.nextPage = function() {
+        if ($scope.currentPage < $scope.pageCount()) {
+            $scope.currentPage++;
+        }
+    };
+}]);
+
 
 myappControllers.controller('ProductsDetailsCtrl', ['$scope', 'Products','$routeParams', function($scope, Products, $routeParams){
     Products.query(function(data){
@@ -59,21 +79,6 @@ myappControllers.controller('ProductsCtrl',['$scope','ProductFactory',function($
     $scope.itemsPerPage = 3;
     $scope.currentPage = 0;
 
-    $scope.prevPage = function() {
-        if ($scope.currentPage > 0) {
-            $scope.currentPage--;
-        }
-    };
-    $scope.pageCount = function() {
-        return Math.ceil($scope.productrows.length/$scope.itemsPerPage)-1;
-    };
-    $scope.setPage = function(n) {
-        $scope.currentPage = n;
-    };
-    $scope.nextPage = function() {
-        if ($scope.currentPage < $scope.pageCount()) {
-            $scope.currentPage++;
-        }
-    };
+
 }]);
 

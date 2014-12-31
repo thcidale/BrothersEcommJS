@@ -38,3 +38,10 @@ myapp.directive('myFooter', function() {
     templateUrl: "directives/footer.html"
   }
 });
+myapp.directive('myPagination', function() {
+    return {
+        restrict: 'E',
+        templateUrl: "directives/pagination.html",
+        controller:"PaginationCtrl"
+    }
+});

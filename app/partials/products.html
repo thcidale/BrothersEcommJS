@@ -128,13 +128,7 @@
                         30                </option>
                 </select> per page
             </div>
-            <ul class="dc_pagination dc_paginationA dc_paginationA06">
-                <li><a href="#/products" class="previous" ng-click="prevPage()"><< Prev</a></li>
-                <li ng-repeat="n in range()" ng-class="{active: n == currentPage}" ng-click="setPage(n)">
-                    <a href="#/products">{{n+1}}</a>
-                </li>
-                <li><a href="#/products" class="previous" ng-click="nextPage()">Next >></a></li>
-            </ul>
+<my-pagination></my-pagination>
             <div class="clear"></div>
         </div>
         <div class="clear"></div>
