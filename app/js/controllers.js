@@ -28,14 +28,21 @@ myappControllers.controller('PaginationCtrl',['$scope',function($scope){
         var rangeSize = 2;
         var ps = [];
         var start;
-
+        var pageCount = $scope.pageCount();
         start = $scope.currentPage;
-        if ( start > $scope.pageCount()-rangeSize ) {
-            start = $scope.pageCount()-rangeSize+1;
-        }
+        if(rangeSize<=pageCount) {
+            if (start > pageCount - rangeSize) {
+                start = pageCount - rangeSize;
+            }
 
-        for (var i=start; i<start+rangeSize; i++) {
-            ps.push(i);
+            for (var i = start; i < start + rangeSize; i++) {
+                ps.push(i);
+            }
+        }else{
+            for (var i = start; i <pageCount; i++) {
+                ps.push(i);
+            }
+
         }
         return ps;
     };
@@ -46,13 +53,13 @@ myappControllers.controller('PaginationCtrl',['$scope',function($scope){
         }
     };
     $scope.pageCount = function() {
-        return Math.ceil($scope.productrows.length/$scope.itemsPerPage)-1;
+        return Math.ceil($scope.productrows.length/$scope.itemsPerPage);
     };
     $scope.setPage = function(n) {
         $scope.currentPage = n;
     };
     $scope.nextPage = function() {
-        if ($scope.currentPage < $scope.pageCount()) {
+        if (($scope.currentPage +1)< $scope.pageCount()) {
             $scope.currentPage++;
         }
     };
