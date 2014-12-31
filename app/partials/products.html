@@ -116,21 +116,8 @@
                 <a href=""><img src="images/arrow2.gif" alt="" class="v-middle"></a>
             </div>
         </div>
-        <div class="pager">
-            <div class="limiter visible-desktop">
-                <label>Show</label>
-                <select>
-                    <option value="" selected="selected">
-                        9                </option>
-                    <option value="">
-                        15                </option>
-                    <option value="">
-                        30                </option>
-                </select> per page
-            </div>
-<my-pagination></my-pagination>
-            <div class="clear"></div>
-        </div>
+        <my-pagination></my-pagination>
+
         <div class="clear"></div>
     </div>
     <div class="box1" ng-repeat="productrow in productrows | pagination:currentPage*itemsPerPage | limitTo:itemsPerPage">

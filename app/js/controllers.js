@@ -86,10 +86,5 @@ myappControllers.controller('ProductsCtrl',['$scope','ProductFactory',function($
     $scope.productrows=ProductFactory.getProductsInRows(3);
 
 
-
-
-
-
-
 }]);
 
