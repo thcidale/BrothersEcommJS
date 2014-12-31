@@ -23,6 +23,23 @@ myappControllers.controller('HomeCtrl',['$scope',function($scope) {
 
 myappControllers.controller('PaginationCtrl',['$scope',function($scope){
 
+
+    $scope.range = function() {
+        var rangeSize = 2;
+        var ps = [];
+        var start;
+
+        start = $scope.currentPage;
+        if ( start > $scope.pageCount()-rangeSize ) {
+            start = $scope.pageCount()-rangeSize+1;
+        }
+
+        for (var i=start; i<start+rangeSize; i++) {
+            ps.push(i);
+        }
+        return ps;
+    };
+
     $scope.prevPage = function() {
         if ($scope.currentPage > 0) {
             $scope.currentPage--;
@@ -56,28 +73,15 @@ myappControllers.controller('ProductsDetailsCtrl', ['$scope', 'Products','$route
 
 myappControllers.controller('ProductsCtrl',['$scope','ProductFactory',function($scope,ProductFactory) {
     $scope.productrows =[];
+    $scope.itemsPerPage = 3;
+    $scope.currentPage = 0;
 
     $scope.productrows=ProductFactory.getProductsInRows(3);
 
 
-    $scope.range = function() {
-        var rangeSize = 2;
-        var ps = [];
-        var start;
 
-        start = $scope.currentPage;
-        if ( start > $scope.pageCount()-rangeSize ) {
-            start = $scope.pageCount()-rangeSize+1;
-        }
 
-        for (var i=start; i<start+rangeSize; i++) {
-            ps.push(i);
-        }
-        return ps;
-    };
 
-    $scope.itemsPerPage = 3;
-    $scope.currentPage = 0;
 
 
 }]);
