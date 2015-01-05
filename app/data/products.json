@@ -4,6 +4,12 @@
   "title":"Pizza de Muzzarela",
   "subtitle":"8 pedaços",
   "flavor":["muzzarela"],
+  "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
   "type":"single",
   "size":"grande",
   "massa":"normal",
@@ -15,6 +21,12 @@
   "title":"Pizza de Muzzarela",
   "subtitle":"8 pedaços",
   "flavor":["muzzarela"],
+  "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
   "type":"single",
   "size":"grande",
   "massa":"normal",
@@ -26,6 +38,12 @@
     "title":"Pizza de Muzzarela",
     "subtitle":"6 pedaços",
     "flavor":["muzzarela"],
+    "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
     "type":"single",
     "size":"pequena",
     "massa":"normal",

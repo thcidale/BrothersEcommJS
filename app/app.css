@@ -28,3 +28,18 @@
   content: "";
   padding: 0;
 }
+
+.pizza-width {
+  width: 100%;
+  height: auto;
+}
+
+.fa.fa-heart-o {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.fa.fa-heart-o:hover {
+  color: yellow;
+  transition: color 0.4s linear;
+}

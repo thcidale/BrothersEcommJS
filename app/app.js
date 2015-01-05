@@ -3,7 +3,8 @@ myapp= angular.module('myApp', [
   'ngRoute',
   'myApp.version',
   'myappControllers',
-    'myappServices'
+    'myappServices',
+    'ngMaterial'
 ]);
 myapp.config(['$routeProvider', function($routeProvider) {
   $routeProvider

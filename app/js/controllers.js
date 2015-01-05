@@ -76,25 +76,10 @@ myappControllers.controller('ProductsDetailsCtrl', ['$scope', 'Products','$route
     $scope.buyPizza = function(){
        // faz alguma coisa
     }
+    $scope.addToWishlist = function(){
+        // faz alguma coisa
+    }
 
-    $scope.slides = [
-                'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-                'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-                'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
-                'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg',
-            ];
-
-    $scope.pizzasTotal = [
-                'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-                'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-                'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
-                'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg',
-                'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-                'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-                'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
-                'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
-
-            ];
 }]);
 
 myappControllers.controller('ProductsCtrl',['$scope','ProductFactory',function($scope,ProductFactory) {
