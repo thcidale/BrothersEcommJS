@@ -1,30 +1,49 @@
 <my-header></my-header>
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="bower_components/flexslider/flexslider.css">
 	<div class="center">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-			 <img ng-src="images/prod{{products.id}}.jpg">
-			</div>
-			<div class="col-md-8">
-				<h3>{{products.title}}</h3>
-				<p>{{products.price | currency}}</p>
-				<select>
-					<option ng-repeat="pizza in pizzas">{{pizza}}</option>
-				</select>
-				<button ng-click="buyPizza()"> Buy Now</button>
-			</div>
-		</div>	
-	</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+				 <!-- <img ng-src="images/prod{{products.id}}.jpg"> -->
+				 <flex-slider slide="s in slides" animation="slide" control-nav="thumbnails" >
+					<li data-thumb="{{s}}">
+						<img ng-src="{{s}}">
+					</li>
+				</flex-slider>
+				</div>
+				<div class="col-md-8">
+					<h3>{{products.title}}</h3>
+					<p>{{products.price | currency}}</p>
+					<select>
+						<option ng-repeat="pizza in pizzas">{{pizza}}</option>
+					</select>
+					<button ng-click="buyPizza()"> Buy Now</button>
+				</div>
+			</div>	
+		</div>
 
-	<div class="container center-less">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="features">
-					<h3>Description</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos earum natus eveniet voluptatum, ut hic, praesentium dolore minima perferendis omnis sequi ad. Consequatur porro sint unde amet, veritatis numquam iure officia dolores deserunt eligendi non laborum nesciunt temporibus minus quasi ratione molestias eius quibusdam. Deleniti quae fugit, ea assumenda ut?</p>
+		<div class="container center-less">
+			<div class="row">
+				<h3>Other pizzas that you might like</h3>
+			</div>
+			<div class="row">
+				<flex-slider class="carousel" slide="s in pizzasTotal track by $index" animation="slide" animation-loop="true" item-width="220" item-margin="5">
+				<li>
+					<img ng-src="{{s}}">
+				</li>
+			</flex-slider>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="features">
+						<h3>Description</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos earum natus eveniet voluptatum, ut hic, praesentium dolore minima perferendis omnis sequi ad. Consequatur porro sint unde amet, veritatis numquam iure officia dolores deserunt eligendi non laborum nesciunt temporibus minus quasi ratione molestias eius quibusdam. Deleniti quae fugit, ea assumenda ut?</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	</div>
+		
+			
 <my-footer></my-footer>

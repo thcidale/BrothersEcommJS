@@ -9,3 +9,7 @@
 .info > a {
 	text-decoration: none;
 }
+
+.fix-Width {
+	width: 360px !important;
+}
