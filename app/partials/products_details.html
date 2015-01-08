@@ -2,17 +2,16 @@
 <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
 <link rel="stylesheet" href="bower_components/flexslider/flexslider.css">
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 	<div class="center">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-				 <!-- <img ng-src="images/prod{{products.id}}.jpg"> -->
-				 <flex-slider slide="s in products.images track by $index" animation="slide" control-nav="thumbnails" >
-					<li data-thumb="{{s.img}}">
-						<img  ng-src="{{s.img}}">
-					</li>
-				</flex-slider>
+				<div class="col-md-4 pizza-width">
+					 <flex-slider slide="s in products.images track by $index" animation="slide" control-nav="thumbnails" >
+						<li data-thumb="{{s.img}}">
+							<img  ng-src="{{s.img}}">
+						</li>
+					</flex-slider>
 				</div>
 				<div class="col-md-8">
 					<h3>{{products.title}}</h3>
@@ -21,7 +20,7 @@
 						<option ng-repeat="pizza in pizzas">{{pizza}}</option>
 					</select><br>
 					<br>
-					<md-button class="md-raised" ng-click="buyPizza()"> Buy Now</md-button>
+					<md-button class="md-raised" ng-click="buyPizza()"> Order Now</md-button>
 					<div>
 						<span ng-click="addToWishlist()" class="fa fa-heart-o" style="padding: 10px; margin-top: 20px;"></span><span>Add to wishlist</span>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere explicabo, ut mollitia blanditiis, aperiam nostrum ex fugit nam ipsa voluptatem dignissimos labore sequi beatae sunt alias aliquam nisi corporis quam possimus ducimus quasi iste soluta officiis laudantium. Dolorum soluta neque dignissimos optio asperiores recusandae autem laudantium eveniet porro accusantium, in!</p>
@@ -50,6 +49,4 @@
 			</div>
 		</div>
 	</div>
-		
-			
 <my-footer></my-footer>

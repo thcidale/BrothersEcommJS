@@ -55,6 +55,12 @@
     "title":"Pizza de Muzzarela",
     "subtitle":"8 pedaços",
     "flavor":["muzzarela"],
+    "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
     "type":"single",
     "size":"grande",
     "massa":"pan",
@@ -66,6 +72,12 @@
     "title":"Pizza de Muzzarela",
     "subtitle":"6 pedaços",
     "flavor":["muzzarela"],
+    "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
     "type":"single",
     "size":"pequena",
     "massa":"pan",
@@ -77,6 +89,12 @@
     "title":"Pizza de Calabresa",
     "subtitle":"8 pedaços",
     "flavor":["calabresa"],
+    "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
     "type":"single",
     "size":"grande",
     "massa":"normal",
@@ -88,6 +106,12 @@
     "title":"Pizza de Calabresa",
     "subtitle":"6 pedaços",
     "flavor":["calabresa"],
+    "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
     "type":"single",
     "size":"pequena",
     "massa":"normal",
@@ -99,6 +123,12 @@
     "title":"Pizza de Calabresa",
     "subtitle":"8 pedaços",
     "flavor":["calabresa"],
+    "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
     "type":"single",
     "size":"grande",
     "massa":"pan",
@@ -110,6 +140,12 @@
     "title":"Pizza de Calabresa",
     "subtitle":"6 pedaços",
     "flavor":["calabresa"],
+    "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
     "type":"single",
     "size":"pequena",
     "massa":"pan",
@@ -121,6 +157,12 @@
     "title":"Pizza de Aliche",
     "subtitle":"8 pedaços",
     "flavor":["aliche"],
+    "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
     "type":"single",
     "size":"grande",
     "massa":"normal",
@@ -132,6 +174,12 @@
     "title":"Pizza de Aliche",
     "subtitle":"6 pedaços",
     "flavor":["aliche"],
+    "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
     "type":"single",
     "size":"pequena",
     "massa":"normal",
@@ -143,6 +191,12 @@
     "title":"Pizza de Aliche",
     "subtitle":"8 pedaços",
     "flavor":["aliche"],
+    "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
     "type":"single",
     "size":"grande",
     "massa":"pan",
@@ -154,6 +208,12 @@
     "title":"Pizza de Aliche",
     "subtitle":"6 pedaços",
     "flavor":["aliche"],
+    "images" : [
+    {"img" : "images/calabresa01.jpg"},
+    {"img" : "images/calabresa02.jpg"},
+    {"img" : "images/calabresa03.jpg"},
+    {"img" : "images/calabresa04.jpg"}
+  ],
     "type":"single",
     "size":"pequena",
     "massa":"pan",
